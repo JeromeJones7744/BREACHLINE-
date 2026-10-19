@@ -1,108 +1,36 @@
-Breachline
+BreachLine
+Cybersecurity Investigation & Threat Analysis Platform
 
-Breachline is a cybersecurity incident investigation and response platform designed to simulate the workflow of investigating security incidents.
-
-The project focuses on giving users a structured environment where they can review incidents, examine evidence, track investigation activity, document findings, and develop an investigator analysis.
-
-Project Overview
-
-Security incidents often involve large amounts of information that need to be organized before an investigator can determine what happened.
-
-Breachline is designed around that investigation process.
-
-Instead of simply displaying security alerts, Breachline organizes an investigation into multiple components, including:
-
-* Incident information
-* Evidence
-* Evidence timelines
-* Investigation time logs
-* Investigator analysis
-* Attack scenarios
-* Case documentation
-
-The goal is to create a practical cybersecurity project that demonstrates how security investigations can be organized through a software application.
-
+BreachLine is a browser-based learning project for documenting suspected security incidents, recording evidence and chain-of-custody events, tracking investigation activity, and preparing incident reports.
 Features
-
-Incident Investigation
-
-Users can review and investigate security incidents through a centralized interface.
-
-Evidence Management
-
-Investigations can contain evidence that investigators can review and use when determining what occurred during an incident.
-
-Evidence Timeline
-
-Evidence can be organized chronologically to help establish the sequence of events surrounding an incident.
-
-Time Logs
-
-Investigators can document activity performed during an investigation and maintain a record of investigation time.
-
-Investigator Analysis
-
-The investigation includes an area for documenting conclusions, observations, and analysis.
-
-Phishing Attack Scenario
-
-Breachline includes a phishing attack scenario designed to demonstrate how a security incident can be investigated inside the platform.
-
-Technology
-
-Breachline is currently being developed as a web-based application.
-
-Current technologies include:
-
-* HTML
-* CSS
-* JavaScript
-
-Additional technologies may be introduced as development continues.
-
-Project Goals
-
-The primary goals of Breachline are to:
-
-1. Demonstrate practical cybersecurity concepts.
-2. Simulate a security investigation workflow.
-3. Provide structured incident documentation.
-4. Demonstrate frontend development skills.
-5. Combine cybersecurity and software development into one project.
-6. Create an original portfolio project suitable for demonstrating technical and security knowledge.
-
-Project Status
-
-Development Status: Active Development
-
-Breachline is currently a work in progress. Features and interface components are continuing to be developed and improved.
-
-Disclaimer
-
-Breachline is an educational and portfolio project.
-
-The attack scenarios represented in the application are simulated and are intended for controlled educational use. The project does not represent a production security incident response platform.
-
-Future Development
-
-Potential future development areas include:
-
-* User authentication
-* Multiple investigation cases
-* Role-based access
-* Advanced evidence management
-* Investigation reports
-* Incident severity scoring
-* Security event visualization
-* Database integration
-* API integration
-* Audit logging
-* Exportable investigation reports
-
-Author
-
-Developed as an independent cybersecurity and software development project.
-
-⸻
-
-Breachline — Investigate. Analyze. Document.
+- Phishing indicator checklist and transparent risk scoring (training aid only)
+- Case details and status dashboard with documentation progress
+- Evidence register with collection details, handling history, importance flags, and soft removal/restoration
+- Removal preserves the evidence record and adds a custody-history event instead of silently deleting history
+- Chronological investigation timeline
+- Investigator notes and incident report generation
+- Save report as HTML or print / save as PDF
+- Browser-local workspace persistence and JSON backup import/export
+- Malware, credential, and network incident documentation panels
+Run locally
+1. Download the HTML file.
+2. Open it in a modern browser (Safari, Chrome, or Firefox).
+3. Create a case, then document findings and evidence.
+4. Use Export Case Backup regularly to save a portable JSON backup.
+Important limitations
+- This is a local browser-based documentation tool, not a SIEM, endpoint scanner, malware sandbox, or forensic acquisition suite.
+- BreachLine does not visit or verify suspicious URLs and does not execute or scan files.
+- Risk scoring is a training aid and does not independently establish whether an incident is malicious.
+- Data saved in browser storage can be lost if browser data is cleared. Export backups and store them securely.
+- Evidence removal is a soft removal from the active register; it intentionally preserves the historical record.
+- Do not put real sensitive personal, employer, or incident data into a public repository or screenshots. Use sanitized demonstration cases.
+Suggested GitHub screenshots
+Capture a sanitized demo case showing: (1) the dashboard, (2) the phishing analysis and score, (3) evidence with custody history, and (4) the investigation timeline and generated report. Do not include real names, email addresses, government documents, account identifiers, or other personal data.
+Project talking points
+- Designed a client-side incident documentation workflow.
+- Implemented local persistence and portable JSON backup/restore.
+- Built evidence lifecycle controls that preserve custody history.
+- Used DOM rendering and text-safe insertion for user-provided investigation content.
+- Identified limitations clearly: the tool documents analyst inputs but does not independently verify threats.
+License
+Add a license before inviting reuse; do not imply a license has been granted unless you choose one.
